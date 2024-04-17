@@ -1,5 +1,10 @@
 ﻿@model IEnumberable<ToDo>
 
+<hr />
+    Partial View<br/>
+    <partial name="_IndexPartialView"></partial>
+<hr />
+
 <div class="row">
     <div class="col-md-2">
         <form asp-action="Filter" method="post">
@@ -17,7 +22,7 @@
                     <option value="all">All</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Filter</button>
+            <submit-button class="btn btn-primary">Filter</submit-button>
             <a asp-action="Index" asp-route-id="" class="btn btn-primary">Clear</a>
         </form>
     </div>
